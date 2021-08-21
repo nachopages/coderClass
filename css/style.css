@@ -1,0 +1,378 @@
+html {
+    font-size: 65%;
+}
+
+body {
+    background-color: #b3e5fc;
+}
+
+section div a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-decoration: underline solid #d32f2f;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'EB Garamond', serif;
+    padding: 20px;
+}
+
+
+/*formularios*/
+
+form {
+    font-size: 3rem;
+}
+
+.formContainer {
+    width: 600px;
+    background-color: rgb(19, 97, 133);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-family: calibri;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formContainer h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.controls {
+    width: 95%;
+    background: rgb(19, 97, 133);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(1, 15, 22);
+    font-family: calibri;
+    font-size: 18px;
+    color: white;
+}
+
+.boton {
+    width: 100px;
+    background-color: rgb(7, 27, 145);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.textArea {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.botonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mensaje {
+    width: 200px;
+    height: 200px;
+    margin-left: 85vh;
+    margin-top: 40px;
+    resize: none;
+}
+
+.send {
+    width: 100px;
+    background-color: rgb(7, 27, 145);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-left: 90vh;
+}
+
+
+/*termina form*/
+
+
+/* animaciones y transformaciones*/
+
+.menuItem:hover {
+    color: #2e7d32;
+    transition: .3s;
+}
+
+.dataContainer:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.animate__backInLeft {
+    animation: 2s;
+}
+
+.controls:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.boton:hover {
+    background: linear-gradient(to left, #1565c0, #b3e5fc);
+}
+
+.animate__shakeX {
+    animation: 1s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+/*termina AyT*/
+
+
+/*clase*/
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+.containerInfo {
+    margin-left: 55px;
+}
+
+.title {
+    text-decoration: underline solid #d32f2f;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.nav-link {
+    font-size: 2rem;
+}
+
+.mainTitle {
+    font-size: 4rem;
+    text-decoration: underline solid #d32f2f;
+}
+
+.mainInfo {
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Newsreader', serif;
+}
+
+.infoContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.imgInfo {
+    height: 500px;
+    width: 500px;
+    padding: 30px;
+}
+
+.imgFooter {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: 30px;
+}
+
+.redesSociales {
+    padding: 30px;
+}
+
+.imgAsistencia {
+    width: 100px;
+    height: 100px;
+}
+
+.footerContainer {
+    display: flex;
+}
+
+.asistencia {
+    padding: 30px;
+}
+
+.asistenciaContainer {
+    display: inline-flex;
+}
+
+.number {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+/*Responsive*/
+
+@media (max-width:425px) {
+    .infoContainer {
+        display: block;
+    }
+    .imgInfo {
+        width: 300px;
+        height: 300px;
+        margin-left: 56px;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .imgFooter {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-left: 30px;
+    }
+    .redesSociales {
+        padding: 30px;
+    }
+    .imgAsistencia {
+        width: 40px;
+        height: 40px;
+    }
+    .footerContainer {
+        display: flex;
+    }
+    .asistencia {
+        padding: 30px;
+    }
+    .asistenciaContainer {
+        display: flex;
+    }
+    .number {
+        margin-bottom: 40px;
+    }
+    .cards {
+        display: block;
+        margin-left: 70px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .formContainer {
+        width: 400px;
+    }
+}
+
+@media (max-width:768px) {
+    .infoContainer {
+        display: block;
+    }
+    .imgInfo {
+        margin-left: 140px;
+    }
+    .imgFooter {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: 30px;
+    }
+    .redesSociales {
+        padding: 30px;
+    }
+    .imgAsistencia {
+        width: 100px;
+        height: 100px;
+    }
+    .footerContainer {
+        display: flex;
+    }
+    .asistencia {
+        padding: 30px;
+    }
+    .asistenciaContainer {
+        display: inline-flex;
+    }
+    .number {
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .imgInfo {
+        margin-top: 60px;
+    }
+    .imgFooter {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: 30px;
+    }
+    .redesSociales {
+        padding: 30px;
+    }
+    .imgAsistencia {
+        width: 100px;
+        height: 100px;
+    }
+    .footerContainer {
+        display: flex;
+    }
+    .asistencia {
+        padding: 30px;
+    }
+    .asistenciaContainer {
+        display: inline-flex;
+    }
+    .number {
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:1440px) {
+    .imgFooter {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: 30px;
+    }
+    .redesSociales {
+        padding: 30px;
+    }
+    .imgAsistencia {
+        width: 100px;
+        height: 100px;
+    }
+    .footerContainer {
+        display: flex;
+    }
+    .asistencia {
+        padding: 30px;
+    }
+    .asistenciaContainer {
+        display: inline-flex;
+    }
+    .number {
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
